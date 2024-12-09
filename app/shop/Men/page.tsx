@@ -3,13 +3,13 @@ import { Button } from "@/components/ui/button";
 
 const Men = () => {
     return (
-      <div className="py-8 px-4">
+      <div className="py-8 px-4 ">
         
-        <div className="max-w-6xl mx-auto grid grid-cols-3 md:grid-cols-2 gap-2 space-x-5">
+        <div className="max-w-6xl mx-auto grid grid-cols-3 md:grid-cols-2 gap-2 space-x-5 animate-slideLeft">
       
-          <div className="flex fle/x-col items-center space-x-5 ">
+          <div className="flex fle/x-col items-center space-x-5">
     
-            <div className=" gap-6 mb-4  ">
+            <div className=" gap-6 mb-4 ">
               
               <img
                 src="/image/image 1.png"
@@ -38,7 +38,7 @@ const Men = () => {
             <img
               src="/image/image 1 (1).png"
               alt="Product Main"
-              className="w-[419px] max-w-md object-cover rounded-lg shadow-md mb-4 md:mb-5"
+              className="w-[419px] max-w-md object-cover rounded-lg transition-all duration-200 ease-in-out hover:shadow-lg mb-4 md:mb-5"
             />
           </div>
   
@@ -145,11 +145,11 @@ const Men = () => {
   </div>
   </div>
   </div>
-  <div className="">
+  <div className="animate-slideRight">
    
 
-<div className="flex flex-wrap gap-6 justify-center pt-5">
-  <div className="w-full sm:w-[385px] md:w-[450px] lg:w-[610px] h-auto rounded-[20px] px-8 shadow-md border border-gray-200">
+<div className="flex flex-wrap gap-6 justify-center pt-5 ">
+  <div className="w-full sm:w-[385px] md:w-[450px] lg:w-[610px] h-auto rounded-[20px] px-8 transition-all duration-200 ease-in-out hover:shadow-lg border border-gray-200">
     <p className="stars flex items-center text-yellow-400 text-2xl gap-1">★★★★☆</p>
     <div>
       <h1 className="font-bold text-lg">Samantha D.</h1>
@@ -160,7 +160,7 @@ const Men = () => {
     </div>
   </div>
 
-  <div className="w-full sm:w-[385px] md:w-[450px] lg:w-[610px] h-auto rounded-[20px] px-8 shadow-md border border-gray-200">
+  <div className="w-full sm:w-[385px] md:w-[450px] lg:w-[610px] h-auto rounded-[20px] px-8 transition-all duration-200 ease-in-out hover:shadow-lgborder border-gray-200">
     <p className="stars flex items-center text-yellow-400 text-2xl gap-1">★★★★☆</p>
     <div>
       <h1 className="font-bold text-lg">Samantha D.</h1>
@@ -171,7 +171,7 @@ const Men = () => {
     </div>
   </div>
 
-  <div className="w-full sm:w-[385px] md:w-[450px] lg:w-[610px] h-auto rounded-[20px] px-8 shadow-md border border-gray-200">
+  <div className="w-full sm:w-[385px] md:w-[450px] lg:w-[610px] h-auto rounded-[20px] px-8 transition-all duration-200 ease-in-out hover:shadow-lg border border-gray-200">
     <p className="stars flex items-center text-yellow-400 text-2xl gap-1">★★★★☆</p>
     <div>
       <h1 className="font-bold text-lg">Samantha D.</h1>
@@ -182,7 +182,7 @@ const Men = () => {
     </div>
   </div>
 
-  <div className="w-full sm:w-[385px] md:w-[450px] lg:w-[610px] h-auto rounded-[20px] px-8 shadow-md border border-gray-200">
+  <div className="w-full sm:w-[385px] md:w-[450px] lg:w-[610px] h-auto rounded-[20px] px-8 transition-all duration-200 ease-in-out hover:shadow-lg border border-gray-200">
     <p className="stars flex items-center text-yellow-400 text-2xl gap-1">★★★★☆</p>
     <div>
       <h1 className="font-bold text-lg">Samantha D.</h1>
@@ -193,7 +193,7 @@ const Men = () => {
     </div>
     
   </div>
-  <div className="w-full sm:w-[385px] md:w-[450px] lg:w-[610px] h-auto rounded-[20px] px-8 shadow-md border border-gray-200">
+  <div className="w-full sm:w-[385px] md:w-[450px] lg:w-[610px] h-auto rounded-[20px] px-8 transition-all duration-200 ease-in-out hover:shadow-lg border border-gray-200">
     <p className="stars flex items-center text-yellow-400 text-2xl gap-1">★★★★☆</p>
     <div>
       <h1 className="font-bold text-lg">Samantha D.</h1>
@@ -204,7 +204,7 @@ const Men = () => {
     </div>
   </div>
 
-  <div className="w-full sm:w-[385px] md:w-[450px] lg:w-[610px] h-auto rounded-[20px] px-8 shadow-md border border-gray-200">
+  <div className="w-full sm:w-[385px] md:w-[450px] lg:w-[610px] h-auto rounded-[20px] px-8 transition-all duration-200 ease-in-out hover:shadow-lg border border-gray-200">
     <p className="stars flex items-center text-yellow-400 text-2xl gap-1">★★★★☆</p>
     <div>
       <h1 className="font-bold text-lg">Samantha D.</h1>
@@ -218,7 +218,7 @@ const Men = () => {
 <div className="flex justify-center pt-6 ">
 <Button className="bg-white text-black px-6 py-2 font-medium text-base rounded-[62px] hover:bg-gray-100 w-[230px] h-[52px] ">Load More Reviews</Button>
 </div>
-<section className="p-6">
+<section className="p-6 animate-slideBottom">
         <h2 className="text-5xl font-bold mb-7r text-center pt-3 mb-8">You might also like</h2>
         <div className="w-[1640px] md:[1700px] h-[152px] md:pb-[100px] flex flex-col gap-6 justify-center md:flex-row">
          <div >
@@ -227,7 +227,7 @@ const Men = () => {
               alt="Travel"
               width={295}
               height={150}
-              className="rounded shadow-md"
+              className="transition-all duration-200 ease-in-out hover:shadow-lg"
             />
         <h3 className="text-sm font-semibold w-[225px] pt-3">Polo with Contrast Trims</h3>
 
@@ -247,7 +247,7 @@ const Men = () => {
               alt="Health"
               width={295}
               height={150}
-              className="rounded shadow-md"
+              className="transition-all duration-200 ease-in-out hover:shadow-lg"
             />
              <h3 className="text-sm font-semibold w-[225px] pt-3">Gradient Graphic T-shirt</h3>
 
@@ -264,7 +264,7 @@ const Men = () => {
               alt="Sport"
               width={295}
               height={150}
-              className="rounded shadow-md"
+              className="transition-all duration-200 ease-in-out hover:shadow-lg"
             />
              <h3 className="text-sm font-semibold w-[225px] pt-3">Polo with Tipping Details</h3>
         
@@ -281,7 +281,7 @@ const Men = () => {
               alt="Health and Fitness"
               width={295}
               height={150}
-              className="rounded shadow-md"
+              className="transition-all duration-200 ease-in-out hover:shadow-lg"
             />
              <h3 className="text-sm font-semibold w-[225px] pt-3">Black Striped T-shirt</h3>
    
@@ -295,11 +295,10 @@ const Men = () => {
 </div>
 </div>
       </section>
-<div className="flex justify-center mt-56  ">
+<div className="flex justify-center mt-56  animate-pulse">
 <Button variant={"outline"} className="rounded-[64px] w-[218px] h-[52px]">View All</Button>
 </div>
   </div>
     );
   };
   export  default Men;
-

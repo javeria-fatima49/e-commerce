@@ -49,7 +49,7 @@ const Cart = () => {
   const total: number = subtotal - discount + deliveryFee;
 
   return (
-    <div className="p-4 lg:p-8">
+    <div className="p-4 lg:p-8 animate-slideBottom">
       <div className="flex flex-col lg:flex-row justify-between gap-8">
         <div className="flex-1 bg-white shadow-lg rounded-lg p-4">
           <h2 className="text-xl font-bold mb-4">Your Cart</h2>

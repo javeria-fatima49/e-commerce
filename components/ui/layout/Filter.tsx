@@ -13,11 +13,10 @@ export default function Filter() {
       <div className="flex gap-16">
            <h2 className="text-2xl font-bold mb-6">Filters</h2> 
           <div> <Image
-              src="/image/filter.png"
+              src="/image/frame 19.png"
               alt="Travel"
               width={24}
               height={24}
-              className="rounded shadow-md"
             /></div></div>
       <div className="mb-6">
         <h3 className="text-lg font-medium mb-2">Categories</h3>
@@ -58,23 +57,27 @@ export default function Filter() {
           />
         </div>
       </div>
-      <div className="mb-6">
-        <h3 className="text-lg font-medium mb-2">Colors</h3>
-        <div className="grid grid-cols-5 gap-2">
-          {colors.map((color) => (
-            <button
-              key={color}
-              className={`w-8 h-8 rounded-full bg-${color}-500 border-2 ${
-                selectedColor === color ? "border-black" : "border-gray-200"
-              }`}
-              onClick={() => setSelectedColor(color)} 
-            />
-          ))}
-        </div>
-        {selectedColor && (
-          <p className="mt-4 text-sm">Selected Color: {selectedColor}</p>
-        )}
-      </div>
+<div className="mb-6">
+  <h3 className="text-lg font-medium mb-2">Colors</h3>
+  <div className="grid grid-cols-5 gap-2">
+    {colors.map((color) => (
+      <button
+        key={color}
+        className={`w-8 h-8 rounded-full border-2 ${
+          selectedColor === color ? "border-black" : "border-gray-200"
+        }`}
+        style={{ backgroundColor: color }}
+        onClick={() => setSelectedColor(color)}
+      />
+    ))}
+  </div>
+  {selectedColor && (
+    <p className="mt-4 text-sm">Selected Color: {selectedColor}</p>
+  )}
+</div>
+
+
+
       <div className="mb-6">
         <h3 className="text-lg font-medium mb-2">Size</h3>
         <div className="grid grid-cols-3 gap-2">

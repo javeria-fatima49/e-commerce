@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="bg-white pt-5 w-full min-h-screen relative">
-<div className="relative w-full h-auto">
+<div className="relative w-full h-auto animate-slideTop">
   <Image
     src="/image/Rectangle 2.png"
     alt="profile"
@@ -27,7 +27,7 @@ export default function Home() {
     </Button>
   </div>
 </div>
-      <div className="bg-black py-8 grid grid-cols-2 md:grid-cols-5 gap-8 justify-items-center">
+      <div className="bg-black py-8 grid grid-cols-2 md:grid-cols-5 gap-8 justify-items-center animate-slideTop">
         {["Group (1)", "zara-logo-1 1", "gucci-logo-1 1", "prada-logo-1 1", "Group"].map(
           (logo, index) => (
             <Image
@@ -42,7 +42,7 @@ export default function Home() {
         )}
       </div>
 
-      <section className="p-6">
+      <section className="p-6 animate-slideLeft">
         <h2 className="text-4xl font-bold text-center mb-8">NEW ARRIVALS</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
@@ -87,7 +87,7 @@ export default function Home() {
           </Button>
         </div>
       </section>
-      <section className="p-6">
+      <section className="p-6 animate-slideRight">
         <h2 className="text-4xl font-bold text-center mb-8">TOP SELLING</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
@@ -190,8 +190,6 @@ export default function Home() {
   </div>
 
 </div>
-
       </div>
-    
   );
 }

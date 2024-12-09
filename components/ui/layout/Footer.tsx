@@ -39,7 +39,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Company Links */}
         <div>
           <h4 className="text-lg font-bold">Company</h4>
           <ul className="mt-4 text-gray-600 space-y-2">
@@ -49,8 +48,6 @@ export default function Footer() {
             <li>Career</li>
           </ul>
         </div>
-
-        {/* Help Links */}
         <div>
           <h4 className="text-lg font-bold">Help</h4>
           <ul className="mt-4 text-gray-600 space-y-2">
@@ -60,8 +57,6 @@ export default function Footer() {
             <li>Privacy Policy</li>
           </ul>
         </div>
-
-        {/* FAQ Links */}
         <div>
           <h4 className="text-lg font-bold">FAQ</h4>
           <ul className="mt-4 text-gray-600 space-y-2">
@@ -72,8 +67,6 @@ export default function Footer() {
             <li>Status</li>
           </ul>
         </div>
-
-        {/* Resources Links */}
         <div>
           <h4 className="text-lg font-bold">Resources</h4>
           <ul className="mt-4 text-gray-600 space-y-2">
@@ -84,11 +77,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-
-      {/* Divider */}
       <div className="mt-10 border-t border-gray-300"></div>
-
-      {/* Footer Bottom */}
       <div className="mt-6 text-sm text-gray-500">
         &copy; 2024 Seerat Fatima. All rights reserved.
       </div>
