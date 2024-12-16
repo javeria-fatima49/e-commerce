@@ -4,34 +4,8 @@ import Caurosel from '@/components/ui/layout/caurosel'
 export default function Home() {
   return (
     <div className="bg-white pt-5 w-full min-h-screen relative">
-    {/* <div className="bg-[#F2F0F1] h-[853px]">
-<div className="relative w-full item h-auto animate-slideTop">
-  <Image
-    src="/image/Rectangle 2.png"
-    alt="profile"
-    layout="responsive"
-    width={1640}
-    height={900}
-    className="object-cover"
-  />
-  <div className="absolute inset-0 flex flex-col justify-start -mt-44 md:justify-center items-start text-white px-4 sm:px-8 md:px-16 lg:px-32 py-6 sm:py-12">
-    <h1 className="text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight max-w-full sm:max-w-lg md:max-w-xl lg:max-w-3xl mt-4 sm:mt-6">
-      FIND CLOTHES THAT MATCH YOUR STYLE
-    </h1>
-    <p className="text-black mt-2 sm:mt-4 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-full sm:max-w-md md:max-w-lg lg:max-w-2xl">
-      Browse through our diverse range of meticulously crafted garments,
-      designed to bring out your individuality and cater to your sense of
-      style.
-    </p>
-    <Button className="mt-4 sm:mt-6 bg-black hover:bg-gray-900 text-white font-bold rounded-xl w-32 sm:w-40 md:w-48 h-10 sm:h-12 md:h-14 text-sm sm:text-base md:text-lg">
-      Shop Now
-    </Button>
-  </div></div>
-  </div> */}
-
-
   <div className="relative bg-[#F2F0F1] flex flex-col lg:flex-col items-center text-center w-full px-4 lg:px-0">
-  {/* Text Section */}
+
   <div className="flex flex-col items-center lg:absolute lg:top-0 lg:left-1/2 lg:-translate-x-1/2 lg:translate-y-1/2 z-10">
     <h1 className="text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mt-4 sm:mt-6">
       FIND CLOTHES THAT MATCH YOUR STYLE
@@ -72,60 +46,6 @@ export default function Home() {
     />
   </div>
 </div>
-
-
-{/* 
-<div className=" ">
-  <div className=" ">
-    <h1 className="text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight max-w-full  mt-4 sm:mt-6">
-      FIND CLOTHES THAT MATCH YOUR STYLE
-    </h1>
-    <p className="text-black mt-2 sm:mt-4 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-full ">
-      Browse through our diverse range of meticulously crafted garments,
-      designed to bring out your individuality and cater to your sense of
-      style.
-    </p>
-    <Button className="mt-4 sm:mt-6 bg-black hover:bg-gray-900 text-white font-bold rounded-xl w-32 sm:w-40 md:w-48 h-10 sm:h-12 md:h-14 text-sm sm:text-base md:text-lg">
-      Shop Now
-    </Button>  </div>
-    <div className="relative w-full h-auto -mt-16 animate-slideTop">
-  <Image
-    src="/image/Rectangle 2.png"
-    alt="profile"
-    layout="responsive"
-    width={1640}
-    height={900}
-    className="object-cover"
-  />
-
-  </div>
-
-
-
-
-</div> */}
-
-
-
-
-
-
-      {/* <div className="bg-black py-8 h-[146px] flex gap-8 justify-items-center animate-slideTop">
-        {["Group (1)", "zara-logo-1 1", "gucci-logo-1 1", "prada-logo-1 1", "Group"].map(
-          (logo, index) => (
-            <Image
-              key={index}
-              src={`/image/${logo}.png`}
-              alt={logo}
-              width={60}
-              height={50}
-              className="object-contain"
-            />
-          )
-        )}
-      </div> */}
-
-
 
 
 <div className="bg-black py-8 h-auto flex flex-wrap justify-center gap-8 animate-slideTop">
