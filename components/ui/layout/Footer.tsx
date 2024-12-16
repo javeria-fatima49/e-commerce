@@ -7,7 +7,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 export default function Footer() {
   return (
-    <footer className="relative mt-40 bg-white text-black px-6 sm:px-10 md:px-20 lg:px-44 py-10">
+    <footer className="relative mt-10 bg-white text-black px-6 sm:px-10 md:px-20 lg:px-44 py-10">
       <div className="bg-black text-center rounded-lg p-6 sm:p-8 lg:p-10 mb-10">
         <h1 className="text-white font-extrabold text-xl sm:text-2xl lg:text-3xl">
           STAY UP TO DATE ABOUT OUR LATEST OFFERS

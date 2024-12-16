@@ -8,7 +8,7 @@ const Testimonials = () => {
       name: "Sarah M.",
       verified: true,
       review:
-        "I’m blown away by the quality and style of the clothes I received from ShopCo. From casual wear to elegant dresses, every piece I’ve bought has exceeded my expectations.",
+        "I&apos;m blown away by the quality and style of the clothes I received from ShopCo. From casual wear to elegant dresses, every piece I&apos;ve bought has exceeded my expectations.",
     },
     {
       stars: 5,
@@ -22,7 +22,7 @@ const Testimonials = () => {
       name: "James L.",
       verified: true,
       review:
-        "As someone who’s always on the lookout for unique fashion pieces, I’m thrilled to have stumbled upon ShopCo. The selection of clothes is not only diverse but also on-point with the latest trends.",
+        "As someone who&apos;s always on the lookout for unique fashion pieces, I&apos;m thrilled to have stumbled upon ShopCo. The selection of clothes is not only diverse but also on-point with the latest trends.",
     },
     {
       stars: 4,
@@ -62,7 +62,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="bg-gray-50 py-8 px-4 relative">
+    <div className=" py-8 px-4 relative">
       <h2 className="text-center text-2xl md:text-3xl font-bold mb-8">
         Our Happy Customers
       </h2>

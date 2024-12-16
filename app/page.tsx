@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-
+import Caurosel from '@/components/ui/layout/caurosel'
 export default function Home() {
   return (
     <div className="bg-white pt-5 w-full min-h-screen relative">
-<div className="relative w-full h-auto animate-slideTop">
+    {/* <div className="bg-[#F2F0F1] h-[853px]">
+<div className="relative w-full item h-auto animate-slideTop">
   <Image
     src="/image/Rectangle 2.png"
     alt="profile"
@@ -13,7 +14,7 @@ export default function Home() {
     height={900}
     className="object-cover"
   />
-  <div className="absolute inset-0 flex flex-col justify-start md:justify-center items-start text-white px-4 sm:px-8 md:px-16 lg:px-32 py-6 sm:py-12">
+  <div className="absolute inset-0 flex flex-col justify-start -mt-44 md:justify-center items-start text-white px-4 sm:px-8 md:px-16 lg:px-32 py-6 sm:py-12">
     <h1 className="text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight max-w-full sm:max-w-lg md:max-w-xl lg:max-w-3xl mt-4 sm:mt-6">
       FIND CLOTHES THAT MATCH YOUR STYLE
     </h1>
@@ -25,22 +26,126 @@ export default function Home() {
     <Button className="mt-4 sm:mt-6 bg-black hover:bg-gray-900 text-white font-bold rounded-xl w-32 sm:w-40 md:w-48 h-10 sm:h-12 md:h-14 text-sm sm:text-base md:text-lg">
       Shop Now
     </Button>
+  </div></div>
+  </div> */}
+
+
+  <div className="relative bg-[#F2F0F1] flex flex-col lg:flex-col items-center text-center w-full px-4 lg:px-0">
+  {/* Text Section */}
+  <div className="flex flex-col items-center lg:absolute lg:top-0 lg:left-1/2 lg:-translate-x-1/2 lg:translate-y-1/2 z-10">
+    <h1 className="text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mt-4 sm:mt-6">
+      FIND CLOTHES THAT MATCH YOUR STYLE
+    </h1>
+    <p className="text-black mt-2 sm:mt-4 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
+      Browse through our diverse range of meticulously crafted garments,
+      designed to bring out your individuality and cater to your sense of
+      style.
+    </p>
+    <Button className="mt-4 sm:mt-6 bg-black hover:bg-gray-900 text-white font-bold rounded-full w-36 sm:w-40 md:w-48 h-10 sm:h-12 md:h-14 text-sm sm:text-base md:text-lg">
+      Shop Now
+    </Button>
+    <div className="flex mt-6 gap-4 justify-between items-center">
+      <div>
+        <h3 className="text-black text-xl font-bold">200+</h3>
+        <p className="text-black text-sm">International Brands</p>
+      </div>
+      <div>
+        <h3 className="text-black text-xl font-bold">2,000+</h3>
+        <p className="text-black text-sm">High-Quality Products</p>
+      </div>
+      <div>
+        <h3 className="text-black text-xl font-bold">30,000+</h3>
+        <p className="text-black text-sm">Happy Customers</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div className=" sm:h-[400px] md:h-[500px] lg:h-[600px]">
+    <Image
+      src="/image/Rectangle 2.png"
+      alt="profile"
+      layout="responsive"
+      width={1640}
+      height={900}
+      className="object-cover flex justify-center"
+    />
   </div>
 </div>
-      <div className="bg-black py-8 grid grid-cols-2 md:grid-cols-5 gap-8 justify-items-center animate-slideTop">
+
+
+{/* 
+<div className=" ">
+  <div className=" ">
+    <h1 className="text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight max-w-full  mt-4 sm:mt-6">
+      FIND CLOTHES THAT MATCH YOUR STYLE
+    </h1>
+    <p className="text-black mt-2 sm:mt-4 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-full ">
+      Browse through our diverse range of meticulously crafted garments,
+      designed to bring out your individuality and cater to your sense of
+      style.
+    </p>
+    <Button className="mt-4 sm:mt-6 bg-black hover:bg-gray-900 text-white font-bold rounded-xl w-32 sm:w-40 md:w-48 h-10 sm:h-12 md:h-14 text-sm sm:text-base md:text-lg">
+      Shop Now
+    </Button>  </div>
+    <div className="relative w-full h-auto -mt-16 animate-slideTop">
+  <Image
+    src="/image/Rectangle 2.png"
+    alt="profile"
+    layout="responsive"
+    width={1640}
+    height={900}
+    className="object-cover"
+  />
+
+  </div>
+
+
+
+
+</div> */}
+
+
+
+
+
+
+      {/* <div className="bg-black py-8 h-[146px] flex gap-8 justify-items-center animate-slideTop">
         {["Group (1)", "zara-logo-1 1", "gucci-logo-1 1", "prada-logo-1 1", "Group"].map(
           (logo, index) => (
             <Image
               key={index}
               src={`/image/${logo}.png`}
               alt={logo}
-              width={150}
+              width={60}
               height={50}
               className="object-contain"
             />
           )
         )}
+      </div> */}
+
+
+
+
+<div className="bg-black py-8 h-auto flex flex-wrap justify-center gap-8 animate-slideTop">
+  {["Group (1)", "zara-logo-1 1", "gucci-logo-1 1", "prada-logo-1 1", "Group"].map(
+    (logo, index) => (
+      <div
+        key={index}
+        className="flex justify-center w-[80px] sm:w-[150px] md:w-[180px] lg:w-[200px] xl:w-[250px]"
+      >
+        <Image
+          src={`/image/${logo}.png`}
+          alt={logo}
+          width={150}
+          height={150}
+          className="object-contain"
+        />
       </div>
+    )
+  )}
+</div>
 
       <section className="p-6 animate-slideLeft">
         <h2 className="text-4xl font-bold text-center mb-8">NEW ARRIVALS</h2>
@@ -149,13 +254,13 @@ export default function Home() {
         <span className="text-black text-lg font-bold">Casual</span>
       </div>
     </div>
-    <div className="relative rounded-lg overflow-hidden shadow-lg w-full sm:w-[48%] md:w-[23%] lg:w-[23%]">
+    <div className="relative rounded-lg overflow-hidden w-full sm:w-[48%] md:w-[23%] lg:w-[23%]">
       <Image
         src="/image/image 13.png"
         alt="Formal"
-        width={684}
+        width={507}
         height={289}
-        className="w-full h-auto object-cover"
+        className="w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-white bg-opacity-0 flex pt-4 pl-4 justify-start">
         <span className="text-black text-lg font-bold">Formal</span>
@@ -167,9 +272,9 @@ export default function Home() {
       <Image
         src="/image/image 12.png"
         alt="Party"
-        width={698}
+        width={407}
         height={289}
-        className="w-full h-auto object-cover"
+        className="w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-white bg-opacity-0 flex pt-4 pl-4 justify-start">
         <span className="text-black text-lg font-bold">Party</span>
@@ -181,7 +286,7 @@ export default function Home() {
         alt="Gym"
         width={407}
         height={289}
-        className="w-full h-auto object-cover"
+        className="w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-white bg-opacity-0 flex pt-4 pl-4 justify-start">
         <span className="text-black text-lg font-bold">Gym</span>
@@ -190,6 +295,7 @@ export default function Home() {
   </div>
 
 </div>
+<Caurosel/>
       </div>
   );
 }
