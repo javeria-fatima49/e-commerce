@@ -33,7 +33,7 @@ export default function Header() {
   <option value="/">T-shirt</option>
 </select>
           <li><Link href="/" className="hover:underline">On Sale</Link></li>
-          <li><Link href="/sanity" className="hover:underline">New Arrivals</Link></li>
+          <li><Link href="sanity" className="hover:underline">New Arrivals</Link></li>
            <li><Link href="/Brands" className="hover:underline">Brands</Link></li>
         </ul>
         <div className="hidden md:flex items-center relative bg-gray-100 text-black py-2 px-4 w-[577px] rounded-r-full  rounded-l-full focus:outline-none">
