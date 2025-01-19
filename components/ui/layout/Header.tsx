@@ -79,7 +79,7 @@ export default function Header() {
   <option value="/">T-shirt</option>
 </select>
           <li><Link href="/" className="hover:underline">On Sale</Link></li>
-          <li><Link href="/" className="hover:underline">New Arrivals</Link></li>
+          <li><Link href="/sanity" className="hover:underline">New Arrivals</Link></li>
            <li><Link href="/Brands" className="hover:underline">Brands</Link></li>
           </ul>
           <div className="flex items-center mt-4">
