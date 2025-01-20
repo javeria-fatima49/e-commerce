@@ -214,7 +214,7 @@ export default async function Home() {
                         </span>
                       ))
                     ) : (
-                      <span className="text-gray-400 text-xs">Not available</span>
+                      <span className="text-gray-400 text-xs py-1">Not available</span>
                     )}
                   </div>
                   <Link href={`/sanity/${product._id}`}>
