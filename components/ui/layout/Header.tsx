@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { IoSearchOutline } from "react-icons/io5";
 import Link from "next/link";
 import { useState } from "react";
@@ -51,7 +52,7 @@ export default function Header() {
           </button></Link> */}
           <Cart/>
           <Link href="#"> <button>
-            <img src="/image/Frame (1).png" alt="wishlist" width={24
+          <Image src="/image/Frame (1).png" alt="wishlist" width={24
 
             } />
           </button></Link>
