@@ -2,16 +2,24 @@
 
 import { useEffect, useState } from "react"
 
+interface ApiResponse {
+  status: string
+  env?: {
+    hasDbUrl: boolean
+    nodeEnv: string
+  }
+  error?: string
+}
+
 export default function TestDeployment() {
   const [status, setStatus] = useState<"loading" | "success" | "error">("loading")
-  const [data, setData] = useState<any>(null)
+  const [data, setData] = useState<ApiResponse | null>(null)
   const [error, setError] = useState<string>("")
 
   useEffect(() => {
     async function checkDeployment() {
       try {
-        // Replace with your actual API endpoint
-        const res = await fetch("/api/products")
+        const res = await fetch("/api/test")
         if (!res.ok) throw new Error("API response was not ok")
         const data = await res.json()
         setData(data)
@@ -37,18 +45,10 @@ export default function TestDeployment() {
       {status === "error" && (
         <div className="p-4 border border-red-200 rounded bg-red-50">
           <p className="text-red-700">Error: {error}</p>
-          <p className="mt-2 text-sm">
-            Please check:
-            <ul className="list-disc pl-5 mt-1">
-              <li>Environment variables are set in Vercel</li>
-              <li>Database connection is working</li>
-              <li>API routes are properly configured</li>
-            </ul>
-          </p>
         </div>
       )}
 
-      {status === "success" && (
+      {status === "success" && data && (
         <div className="p-4 border rounded">
           <pre className="whitespace-pre-wrap">{JSON.stringify(data, null, 2)}</pre>
         </div>
