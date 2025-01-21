@@ -18,7 +18,6 @@
 
 
 
-
 import { NextResponse } from "next/server";
 
 export async function GET() {
@@ -30,11 +29,9 @@ export async function GET() {
         nodeEnv: process.env.NODE_ENV,       // Current Node environment
       },
     });
-  } catch (err) {
-    // Fix for unused variable warning
-    return NextResponse.json(
-      { error: err instanceof Error ? err.message : "Unknown error" },
-      { status: 500 }
-    );
+  } catch (err: unknown) {
+    // Fix for unused variable warning with more precise error handling
+    const errorMessage = err instanceof Error ? err.message : "Unknown error occurred";
+    return NextResponse.json({ error: errorMessage }, { status: 500 });
   }
 }
