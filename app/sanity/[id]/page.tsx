@@ -22,14 +22,14 @@ type Product = {
   _id: string
 }
 
-interface Props {
-  params: {
-    id: string
-  }
-}
+// interface Props {
+//   params: {
+//     name: string
+//   }
+// }
 
-export default function ProductPage({ params }: Props) {
-  const { id } = params
+export default function ProductPage({ params }: { params: { id: string } }) {
+  const {id} = params
   const [product, setProduct] = useState<Product | null>(null)
   const [selectedSize, setSelectedSize] = useState<string>("")
   const [SelectedColor, setSelectedColor] = useState<string>("")
@@ -54,7 +54,6 @@ export default function ProductPage({ params }: Props) {
         console.log(fetchedProduct);
         if (fetchedProduct && fetchedProduct.length > 0) {
           setProduct(fetchedProduct[0])
-          // Set default selections if available
           if (fetchedProduct[0].sizes?.length) {
             setSelectedSize(fetchedProduct[0].sizes[0])
           }
@@ -71,7 +70,8 @@ export default function ProductPage({ params }: Props) {
 
 
     fetchProduct()
-  }, [id])
+  },    [id]
+  )
 
   const handleAddToCart = () => {
     if (product) {
@@ -172,9 +172,6 @@ export default function ProductPage({ params }: Props) {
                 </RadioGroup>
               </div>
             )}
-
-
-
 {product.sizes?.length > 0 && (
               <div className="space-y-4">
                 <Label>Colors</Label>
@@ -207,13 +204,4 @@ export default function ProductPage({ params }: Props) {
     </div>
   )
 }
-
-
-
-
-
-
-
-
-
 
