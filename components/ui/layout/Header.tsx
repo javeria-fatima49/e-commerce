@@ -47,14 +47,11 @@ export default function Header() {
           />
         </div>
         <div className="flex items-center gap-4">
-         {/* <Link href="cart"> <button>
-            <img src="/image/Frame.png" alt="cart" width={24} />
-          </button></Link> */}
           <Cart/>
           <Link href="#"> <button>
           <Image src="/image/Frame (1).png" alt="wishlist" width={24
 
-            } />
+            } height={24} />
           </button></Link>
         </div>
         <button
