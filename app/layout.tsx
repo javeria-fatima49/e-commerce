@@ -31,9 +31,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* <Header/>
-        {children} */}
-         <CartProvider> <Header />{children}</CartProvider>
+         {/* <Header/> */}
+        {/* {children}  */}
+        <Header/> <CartProvider> {children} </CartProvider>
         <Footer/>
       </body>
     </html>

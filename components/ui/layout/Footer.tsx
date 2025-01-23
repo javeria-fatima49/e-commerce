@@ -79,7 +79,7 @@ export default function Footer() {
       </div>
       <div className="mt-10 border-t border-gray-300"></div>
       <div className="mt-6 text-sm text-gray-500">
-        &copy; 2024 Seerat Fatima. All rights reserved.
+        &copy; 2024 Javeria Fatima. All rights reserved.
       </div>
       <div className="flex justify-end -mt-5 ">
       <Image 
