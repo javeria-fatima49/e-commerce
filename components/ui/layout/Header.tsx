@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { IoSearchOutline } from "react-icons/io5";
+// import { useSession } from 'next-auth/react'
 import Link from "next/link";
 import { useState } from "react";
 // import Cart from "@/app/cart/page";
@@ -14,6 +15,7 @@ import { Search } from "./Search";
 //   (acc, item) => acc + item.quantity,
 //   0
 // );
+// const { data: session } = useSession()
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -48,6 +50,11 @@ export default function Header() {
           <li><Link href="/sanity" className="hover:underline">New Arrivals</Link></li>
            <li><Link href="/Brands" className="hover:underline">Brands</Link></li>
         </ul>
+        {/* {session?.user? 'ADMIN' && ( */}
+        <Link href="/admin" className="text-sm font-medium">
+          Admin Dashboard
+        </Link>
+      {/* )} */}
         {/* <div className="hidden md:flex items-center relative bg-gray-100 text-black py-2 px-4 w-[577px] rounded-r-full  rounded-l-full focus:outline-none">
             <IoSearchOutline/>
           <input
