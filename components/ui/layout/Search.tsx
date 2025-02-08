@@ -108,7 +108,7 @@ import { SearchIcon } from "lucide-react"
 
 export function Search() {
   const [searchTerm, setSearchTerm] = useState("")
-  const [isOpen, setIsOpen] = useState(false)
+  const [, setIsOpen] = useState(false)
   const searchRef = useRef<HTMLDivElement>(null)
   const router = useRouter()
 

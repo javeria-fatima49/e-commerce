@@ -43,7 +43,6 @@
 
 
 import { Suspense } from "react";
-import { Search } from "../../components/ui/layout/Search";
 import { fetchProducts, ProductList } from "../../components/ui/layout/Productlist";
 import { Skeleton } from "../../components/ui/layout/Skeleton ";
 
@@ -60,7 +59,7 @@ export default async function SearchPage({
       <h1 className="text-4xl font-bold mb-8">Search Results</h1>
       {/* <Search /> */}
       <div className="mt-8 w-full max-w-4xl">
-        <h2 className="text-2xl font-semibold mb-4">Results for "{query}"</h2>
+        <h2 className="text-2xl font-semibold mb-4">Results for &quot{query}&quot</h2>
         <Suspense fallback={<ProductListSkeleton />}>
           <ProductList products={products} />
         </Suspense>

@@ -1,8 +1,3 @@
-
-
-
-
-
 "use client"
 
 import { useEffect, useState } from "react"
@@ -14,7 +9,6 @@ import { Button } from "@/components/ui/button"
 import { RadioGroup, RadioGroupItem } from "../../../components/ui/layout/Radio"
 import { Label } from "@/components/ui/label"
 import { Skeleton } from "../../../components/ui/layout/Skeleton "
-import { Search } from "../../../components/ui/layout/Search"
 
 type Product = {
   name: string
