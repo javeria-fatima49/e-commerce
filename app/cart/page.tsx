@@ -510,7 +510,6 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import Link from "next/link";
@@ -536,7 +535,7 @@ interface CartItem {
 
 const Cart = () => {
   const { state: cartItems, dispatch } = useCart()
-  const [orders, setOrders] = useState<Order[]>([])
+  const [, setOrders] = useState<Order[]>([])
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const [formData, setFormData] = useState({
@@ -599,7 +598,7 @@ const Cart = () => {
     setError(null)
 
     try {
-      const response = await fetch("http://localhost:3000/api/orders", {
+      const response = await fetch("https://admin-panel-javeria-fatimas-projects-ae6e29f5.vercel.app/api/order", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
